@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savoria | Fine Dining Experience</title>
+    <meta name="description" content="Experience culinary excellence at Savoria. Fine dining restaurant offering exquisite dishes with a modern twist.">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Savoria.</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="#reservation" class="btn-primary">Book a Table</a>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <span class="subtitle">A Taste of Perfection</span>
+                <h1>Exquisite Flavors,<br>Unforgettable Moments</h1>
+                <p>Discover a culinary journey that tantalizes your taste buds and warms your soul.</p>
+                <div class="hero-btns">
+                    <a href="#menu" class="btn-primary">Explore Menu</a>
+                    <a href="#about" class="btn-secondary">Our Story</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>At Savoria, we believe that dining is an art form. Every dish is a masterpiece, crafted with passion and the finest seasonal ingredients. Join us for a gastronomic adventure that celebrates tradition and innovation.</p>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu">
+            <h2>Signature Dishes</h2>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="card-img placeholder-img-1"></div>
+                    <div class="card-content">
+                        <h3>Truffle Risotto</h3>
+                        <p>Creamy Arborio rice with wild mushrooms and fresh black truffle shavings.</p>
+                        <span class="price">$32</span>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="card-img placeholder-img-2"></div>
+                    <div class="card-content">
+                        <h3>Pan-Seared Scallops</h3>
+                        <p>Jumbo scallops served with cauliflower purée and crispy pancetta.</p>
+                        <span class="price">$38</span>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="card-img placeholder-img-3"></div>
+                    <div class="card-content">
+                        <h3>Wagyu Beef Filet</h3>
+                        <p>A5 Wagyu beef served with asparagus and red wine reduction.</p>
+                        <span class="price">$65</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reservation" class="reservation">
+            <h2>Book a Table</h2>
+            <div class="reservation-form-container">
+                <form class="reservation-form" onsubmit="event.preventDefault(); alert('Reservation submitted successfully!');">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <div class="datetime">
+                        <input type="date" required>
+                        <input type="time" required>
+                    </div>
+                    <input type="number" placeholder="Number of Guests" min="1" max="20" required>
+                    <button type="submit" class="btn-primary">Confirm Reservation</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Savoria.</h3>
+                <p>123 Culinary Avenue, Food City, FC 12345</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>info@savoria.com<br>+1 (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Mon - Sun: 5:00 PM - 11:00 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Savoria Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
